@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  providers: [AppService]
+  styleUrls: ['./app.component.css'] // ou .scss, dependendo do que estiver usando
 })
 export class AppComponent {
-  title = 'escola-digital';
+  login() {
+    const matricula = (document.getElementById('matricula') as HTMLInputElement).value;
+    const senha = (document.getElementById('password') as HTMLInputElement).value;
+
+    // Exemplo simples de verificação
+    if (matricula === 'admin' && senha === '1234') {
+      alert('Login bem-sucedido!');
+    } else {
+      alert('Matrícula ou senha incorreta.');
+    }
+  }
 }
