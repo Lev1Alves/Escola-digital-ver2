@@ -1,0 +1,159 @@
+/* Estilos básicos para a tela inicial */
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Necessário para posicionamento absoluto dos filhos */
+}
+
+/* Estilo para o .aluno-info */
+.aluno-info {
+  position: absolute;
+  left: 18%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 1rem; /* Tamanho de fonte padrão */
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+  .aluno-info {
+    left: 10%; /* Alinha mais à esquerda em telas menores */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte */
+  }
+}
+
+/* Media Query para telas muito pequenas, como dispositivos móveis */
+@media (max-width: 480px) {
+  .aluno-info {
+    left: 5%; /* Alinha ainda mais à esquerda em dispositivos móveis */
+    font-size: 0.8rem; /* Reduz ainda mais o tamanho da fonte */
+  }
+}
+
+
+.avisos h2{
+  color: black;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Adicionando a imagem de fundo */
+.main {
+  padding: 40px 20px;
+  text-align: center;
+  
+  color: white; /* Ajusta a cor do texto para ficar visível sobre o fundo */
+}
+
+/* Estilo para a seção de boas-vindas */
+.welcome h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.welcome{
+  background-image: url('assets/images/background.jpg');
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  color: white;
+  padding: 60px 20px;
+  border-radius: 8px;
+}
+
+/* Estilo para as seções internas */
+.avisos, .matricula {
+  margin-top: 40px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.aviso-item {
+  background-color: #fff;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  transition: transform 0.2s ease-in-out;
+}
+
+.aviso-item:hover {
+  transform: translateY(-5px);
+}
+.matricula {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #333; /* <-- Adicionado para tornar o texto visível */
+}
+
+
+.matricula-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.matricula-table th,
+.matricula-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.matricula-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.matricula-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
