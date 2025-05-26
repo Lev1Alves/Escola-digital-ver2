@@ -4,7 +4,8 @@
   width: 100vw;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -21,14 +22,13 @@ html, body {
 }
 
 .header {
-  background-color: #CD853F;
+  background-color: #cd853f;
   color: white;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 
 .logo img {
   height: 50px;
@@ -38,7 +38,6 @@ html, body {
   margin-left: 15px;
   font-weight: bold;
 }
-
 
 .nav ul {
   list-style-type: none;
@@ -61,13 +60,11 @@ html, body {
   text-decoration: underline;
 }
 
-
 .main {
-  padding: 40px 20px 80px; 
+  padding: 40px 20px 80px;
   flex: 1;
   overflow-y: auto;
 }
-
 
 .welcome {
   background-image: url('/assets/images/background.jpg');
@@ -84,26 +81,31 @@ html, body {
   margin-bottom: 20px;
 }
 
+.meio{
+  display: flex;
+  flex-direction: row;
+}
+
 .avisos {
   margin-top: 40px;
-  border-right: 1px solid  #CD853F;
+  border-right: 1px solid #cd853f;
   border-radius: 1px;
   display: flex;
   width: 50%;
   flex-direction: column;
-  align-items: center; /* Alinha os itens à esquerda */
-  padding-left: 20px; /* Espaçamento opcional à esquerda */
+  align-items: center;
+  padding-left: 20px;
 }
 
 .avisos h2 {
   color: black;
-  text-align: center; /* Alinha o título à esquerda */
+  text-align: center;
   width: 75%;
 }
 
 .aviso-item {
   background-color: #fff;
-  border: 2px solid #CD853F;
+  border: 2px solid #cd853f;
   border-radius: 8px;
   padding: 20px;
   margin: 10px 0;
@@ -118,24 +120,31 @@ html, body {
   transform: translateY(-5px);
 }
 
+.direita{
+  width: 49%;
+  justify-content: right;
+  flex-direction: column;
+}
+
 .turma {
   margin-top: 40px;
   display: flex;
-  width: 50%;
+  width: 100%;
+  justify-content: right;
   flex-direction: column;
-  align-items: center; /* Alinha os itens à esquerda */
-  padding-left: 20px; /* Espaçamento opcional à esquerda */
+  align-items: center;
+  padding-left: 20px; 
 }
 
-.turma h2 { 
+.turma h2 {
   color: black;
-  text-align: center; /* Alinha o título à esquerda */
+  text-align: center;
   width: 75%;
 }
 
-.turma-item { 
+.turma-item {
   background-color: #fff;
-  border: 2px solid #CD853F;
+  border: 2px solid #cd853f;
   border-radius: 8px;
   padding: 20px;
   margin: 10px 0;
@@ -148,9 +157,6 @@ html, body {
 
 .turma-item:hover {
   transform: translateY(-5px);
-}
-.meio {
-    width: 50%;
 }
 
 .matricula {
@@ -181,7 +187,7 @@ html, body {
 }
 
 .matricula-table th {
-  background-color: #CD853F;
+  background-color: #cd853f;
   color: white;
   font-weight: bold;
 }
