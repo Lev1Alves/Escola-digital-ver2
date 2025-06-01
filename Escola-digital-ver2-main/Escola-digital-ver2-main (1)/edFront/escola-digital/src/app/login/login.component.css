@@ -1,7 +1,7 @@
 .main-container {
   height: 100vh;
   width: 100vw;
-  background-image: url('../../assets/escolateste.webp');
+  background-image: url('../../assets/images/escolateste.webp');
   background-size: cover;
   background-position: center;
   display: flex;
